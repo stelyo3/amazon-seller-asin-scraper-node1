@@ -16,7 +16,7 @@ async function fetchASINs(sellerId) {
     let page = 1;
 
     while (true) {
-      const url = `https://www.amazon.com/s?i=aps&me=${sellerId}&k=${char}&page=${page}`;
+      const url = `https://www.amazon.co.uk/s?i=aps&me=${sellerId}&k=${char}&page=${page}`;
 
       try {
         const { data } = await axios.get(url, {
